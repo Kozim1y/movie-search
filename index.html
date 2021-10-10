@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+ <div class="header-wrapper">
+   <div class="container-xxl">
+      <header class="header d-flex justify-content-between align-items-center pt-2">
+        <div class="header_left d-flex align-items-center">
+          <a href="#">
+            <img class="site-logo d-block" src="images/camera.png" alt="icon" width="40" height="40">
+          </a>
+          <b>Movies</b>
+        </div>
+
+        
+        <div class="header_right menu effect">
+          <ul class="menu-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Abaut</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        
+      </header>
+    </div>
+  </div>
+
+  <form class="search-form" action="#">
+    <input class="search-input" type="search" placeholder="movie search..." required>
+    <button class="search-button" type="submit">Submit</button>
+  </form>
+
+ <main>
+ <ul class="movies_list d-flex justify-content-around flex-wrap">
+   
+ </ul>
+</main>
+
+<template id="card-template">
+  <li class="movies-list_item">
+    <img class="movie-img" src="" alt="img">
+    <h2 class="movie-name">name</h2>
+    <h3 class="movie-year">year</h3>
+    <a class="movie-link" href="#" target="off">link</a>
+  </li>
+</template>
+
+
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/movies.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
